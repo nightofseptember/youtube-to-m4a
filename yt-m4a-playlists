@@ -1,0 +1,22 @@
+@echo off
+title yt-dlp M4A Downloader
+
+echo ==============================
+echo   YouTube to M4A Downloader
+echo   (Videos & Playlists)
+echo ==============================
+echo.
+set /p URL=Paste video or playlist URL and press ENTER:
+echo.
+
+yt-dlp ^
+ -f bestaudio[ext=m4a] ^
+ --embed-thumbnail ^
+ --add-metadata ^
+ --yes-playlist ^
+ -o "%(playlist_title)s\%(playlist_index)s - %(title)s.%(ext)s" ^
+ "%URL%"
+
+echo.
+echo Download finished.
+pause
