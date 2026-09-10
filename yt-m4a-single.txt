@@ -6,7 +6,8 @@ echo   YouTube to M4A Downloader
 echo ==============================
 echo.
 echo Paste YouTube links (one per line)
-echo Press CTRL+Z then ENTER when done
+echo press ENTER to start a new line (to put new links in)
+echo When finished putting in links, press CTRL+Z then enter.
 echo.
 
 yt-dlp ^
