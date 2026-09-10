@@ -3,9 +3,9 @@ This is just an very simple script to make it easier to download YT Videos in m4
 
 Requirements: You need FFMPEG, ffprobe, ffmpeg and yt-dlp
 
-1. First download ffmpeg and yt-dlp, then ctrl + c and use either single link or playlist version
+1. First download ffmpeg and yt-dlp, then open the program, ctrl + c either single link or playlist version (Depending on what version you chose)
 - https://github.com/BtbN/FFmpeg-Builds/releases , https://github.com/yt-dlp/yt-dlp
-    info - single version, you can put more links after eachother.
+    - info - single version, you can put more links after eachother.
 
 3. Create a txt/notepad file, and ctrl + v into there.
 
