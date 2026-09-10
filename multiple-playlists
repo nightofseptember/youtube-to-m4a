@@ -1,0 +1,28 @@
+****IMPORTANT I AM NOT SURE THIS IS WORKING****
+****IMPORTANT I AM NOT SURE THIS IS WORKING****
+****IMPORTANT I AM NOT SURE THIS IS WORKING****
+****IMPORTANT I AM NOT SURE THIS IS WORKING****
+
+@echo off
+title yt-dlp Multi-Playlist Downloader
+
+echo ==============================
+echo   YouTube Multi-Playlist Downloader
+echo ==============================
+echo.
+echo Paste playlist URLs (one per line)
+echo Press CTRL+Z then ENTER when done
+echo.
+
+"%~dp0ytfiles\yt-dlp_win_x86\yt-dlp_x86.exe" ^
+ --ffmpeg-location "%~dp0ytfiles\ffmpeg-master-latest-win64-gpl-shared\ffmpeg-master-latest-win64-gpl-shared\bin" ^
+ -f bestaudio[ext=m4a] ^
+ --embed-thumbnail ^
+ --add-metadata ^
+ --yes-playlist ^
+ -o "%%(playlist_title)s\%%(playlist_index)s - %%(title)s.%%(ext)s" ^
+ -a -
+
+echo.
+echo Download finished.
+pause
